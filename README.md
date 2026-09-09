@@ -5,11 +5,7 @@ analysis → three-address-code generation) for the custom mini language
 specified in the project manual, built with **Flex** and **Bison**,
 plus a **Tkinter GUI** front-end.
 
-## Team Members
-| Name | ID | Contribution |
-|------|----|---------------|
-| _fill in_ | _fill in_ | _fill in_ |
-| _fill in_ | _fill in_ | _fill in_ |
+
 
 ## 1. Project Structure
 
