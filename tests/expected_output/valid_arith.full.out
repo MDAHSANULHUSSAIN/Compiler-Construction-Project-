@@ -1,0 +1,33 @@
+=== AST ===
+Program
+  VarDecl <int> a (line 1)
+  VarDecl <int> b (line 2)
+  VarDecl <int> c (line 3)
+  Assign a = (line 4)
+    IntLit 5 (line 4)
+  Assign b = (line 5)
+    IntLit 10 (line 5)
+  Assign c = (line 6)
+    BinOp '+' (line 6)
+      Ident a (line 6)
+      BinOp '*' (line 6)
+        Ident b (line 6)
+        IntLit 2 (line 6)
+  Print (line 7)
+    Ident c (line 7)
+=== SYMBOL TABLE ===
+Name            Type     Scope    Line Declared 
+--------------------------------------------------
+a               int      0        1             
+b               int      0        2             
+c               int      0        3             
+=== SUMMARY ===
+Syntax errors: 0
+Semantic errors: 0
+=== TAC ===
+a = 5
+b = 10
+t1 = b * 2
+t2 = a + t1
+c = t2
+print c

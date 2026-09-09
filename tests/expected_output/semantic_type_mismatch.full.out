@@ -1,0 +1,28 @@
+=== AST ===
+Program
+  VarDecl <int> x (line 1)
+  VarDecl <bool> b (line 2)
+  Assign x = (line 3)
+    IntLit 5 (line 3)
+  Assign b = (line 4)
+    BoolLit true (line 4)
+  If (line 8)
+    Cond:
+      BinOp '<' (line 5)
+        Ident x (line 5)
+        Ident b (line 5)
+    Then:
+      Block (line 5)
+        Print (line 6)
+          Ident x (line 6)
+SEMERR|5|Type mismatch: relational operator '<' requires numeric operands (got 'int' and 'bool')
+=== SYMBOL TABLE ===
+Name            Type     Scope    Line Declared 
+--------------------------------------------------
+x               int      0        1             
+b               bool     0        2             
+=== SUMMARY ===
+Syntax errors: 0
+Semantic errors: 1
+=== TAC ===
+(Intermediate code generation skipped due to earlier errors.)

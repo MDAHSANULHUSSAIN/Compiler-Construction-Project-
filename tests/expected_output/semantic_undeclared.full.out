@@ -1,0 +1,20 @@
+=== AST ===
+Program
+  VarDecl <int> x (line 1)
+  Assign x = (line 2)
+    IntLit 5 (line 2)
+  Assign y = (line 3)
+    IntLit 10 (line 3)
+  Print (line 4)
+    Ident y (line 4)
+SEMERR|3|Undeclared variable 'y' used before declaration
+SEMERR|4|Undeclared variable 'y' used before declaration
+=== SYMBOL TABLE ===
+Name            Type     Scope    Line Declared 
+--------------------------------------------------
+x               int      0        1             
+=== SUMMARY ===
+Syntax errors: 0
+Semantic errors: 2
+=== TAC ===
+(Intermediate code generation skipped due to earlier errors.)

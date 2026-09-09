@@ -1,0 +1,28 @@
+TOKEN|int|Keyword|1
+TOKEN|a|Identifier|1
+TOKEN|;|Special Character|1
+TOKEN|int|Keyword|2
+TOKEN|b|Identifier|2
+TOKEN|;|Special Character|2
+TOKEN|int|Keyword|3
+TOKEN|c|Identifier|3
+TOKEN|;|Special Character|3
+TOKEN|a|Identifier|4
+TOKEN|=|Operator|4
+TOKEN|5|Integer Literal|4
+TOKEN|;|Special Character|4
+TOKEN|b|Identifier|5
+TOKEN|=|Operator|5
+TOKEN|10|Integer Literal|5
+TOKEN|;|Special Character|5
+TOKEN|c|Identifier|6
+TOKEN|=|Operator|6
+TOKEN|a|Identifier|6
+TOKEN|+|Operator|6
+TOKEN|b|Identifier|6
+TOKEN|*|Operator|6
+TOKEN|2|Integer Literal|6
+TOKEN|;|Special Character|6
+TOKEN|print|Keyword|7
+TOKEN|c|Identifier|7
+TOKEN|;|Special Character|7

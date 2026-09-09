@@ -1,0 +1,58 @@
+TOKEN|int|Keyword|1
+TOKEN|x|Identifier|1
+TOKEN|;|Special Character|1
+TOKEN|int|Keyword|2
+TOKEN|y|Identifier|2
+TOKEN|;|Special Character|2
+TOKEN|bool|Keyword|3
+TOKEN|flag|Identifier|3
+TOKEN|;|Special Character|3
+TOKEN|x|Identifier|4
+TOKEN|=|Operator|4
+TOKEN|10|Integer Literal|4
+TOKEN|;|Special Character|4
+TOKEN|y|Identifier|5
+TOKEN|=|Operator|5
+TOKEN|0|Integer Literal|5
+TOKEN|;|Special Character|5
+TOKEN|flag|Identifier|6
+TOKEN|=|Operator|6
+TOKEN|true|Boolean Literal|6
+TOKEN|;|Special Character|6
+TOKEN|while|Keyword|7
+TOKEN|(|Special Character|7
+TOKEN|x|Identifier|7
+TOKEN|>|Operator|7
+TOKEN|0|Integer Literal|7
+TOKEN|)|Special Character|7
+TOKEN|{|Special Character|7
+TOKEN|y|Identifier|8
+TOKEN|=|Operator|8
+TOKEN|y|Identifier|8
+TOKEN|+|Operator|8
+TOKEN|x|Identifier|8
+TOKEN|;|Special Character|8
+TOKEN|x|Identifier|9
+TOKEN|=|Operator|9
+TOKEN|x|Identifier|9
+TOKEN|-|Operator|9
+TOKEN|1|Integer Literal|9
+TOKEN|;|Special Character|9
+TOKEN|}|Special Character|10
+TOKEN|if|Keyword|11
+TOKEN|(|Special Character|11
+TOKEN|flag|Identifier|11
+TOKEN|==|Operator|11
+TOKEN|true|Boolean Literal|11
+TOKEN|)|Special Character|11
+TOKEN|{|Special Character|11
+TOKEN|print|Keyword|12
+TOKEN|y|Identifier|12
+TOKEN|;|Special Character|12
+TOKEN|}|Special Character|13
+TOKEN|else|Keyword|13
+TOKEN|{|Special Character|13
+TOKEN|print|Keyword|14
+TOKEN|x|Identifier|14
+TOKEN|;|Special Character|14
+TOKEN|}|Special Character|15

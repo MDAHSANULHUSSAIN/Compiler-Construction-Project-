@@ -1,0 +1,68 @@
+=== AST ===
+Program
+  VarDecl <int> x (line 1)
+  VarDecl <int> y (line 2)
+  VarDecl <bool> flag (line 3)
+  Assign x = (line 4)
+    IntLit 10 (line 4)
+  Assign y = (line 5)
+    IntLit 0 (line 5)
+  Assign flag = (line 6)
+    BoolLit true (line 6)
+  While (line 10)
+    Cond:
+      BinOp '>' (line 7)
+        Ident x (line 7)
+        IntLit 0 (line 7)
+    Body:
+      Block (line 7)
+        Assign y = (line 8)
+          BinOp '+' (line 8)
+            Ident y (line 8)
+            Ident x (line 8)
+        Assign x = (line 9)
+          BinOp '-' (line 9)
+            Ident x (line 9)
+            IntLit 1 (line 9)
+  If (line 15)
+    Cond:
+      BinOp '==' (line 11)
+        Ident flag (line 11)
+        BoolLit true (line 11)
+    Then:
+      Block (line 11)
+        Print (line 12)
+          Ident y (line 12)
+    Else:
+      Block (line 13)
+        Print (line 14)
+          Ident x (line 14)
+=== SYMBOL TABLE ===
+Name            Type     Scope    Line Declared 
+--------------------------------------------------
+x               int      0        1             
+y               int      0        2             
+flag            bool     0        3             
+=== SUMMARY ===
+Syntax errors: 0
+Semantic errors: 0
+=== TAC ===
+x = 10
+y = 0
+flag = true
+L1:
+t1 = x > 0
+if t1 == false goto L2
+t2 = y + x
+y = t2
+t3 = x - 1
+x = t3
+goto L1
+L2:
+t4 = flag == true
+if t4 == false goto L4
+print y
+goto L5
+L4:
+print x
+L5:

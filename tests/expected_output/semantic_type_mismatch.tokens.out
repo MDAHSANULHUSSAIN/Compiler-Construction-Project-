@@ -1,0 +1,25 @@
+TOKEN|int|Keyword|1
+TOKEN|x|Identifier|1
+TOKEN|;|Special Character|1
+TOKEN|bool|Keyword|2
+TOKEN|b|Identifier|2
+TOKEN|;|Special Character|2
+TOKEN|x|Identifier|3
+TOKEN|=|Operator|3
+TOKEN|5|Integer Literal|3
+TOKEN|;|Special Character|3
+TOKEN|b|Identifier|4
+TOKEN|=|Operator|4
+TOKEN|true|Boolean Literal|4
+TOKEN|;|Special Character|4
+TOKEN|if|Keyword|5
+TOKEN|(|Special Character|5
+TOKEN|x|Identifier|5
+TOKEN|<|Operator|5
+TOKEN|b|Identifier|5
+TOKEN|)|Special Character|5
+TOKEN|{|Special Character|5
+TOKEN|print|Keyword|6
+TOKEN|x|Identifier|6
+TOKEN|;|Special Character|6
+TOKEN|}|Special Character|7

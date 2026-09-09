@@ -1,0 +1,16 @@
+=== AST ===
+Program
+  VarDecl <int> x (line 1)
+  VarDecl <int> x (line 2)
+  Print (line 3)
+    Ident x (line 3)
+SEMERR|2|Redeclaration: 'x' is already declared in this scope (first declared at line 1)
+=== SYMBOL TABLE ===
+Name            Type     Scope    Line Declared 
+--------------------------------------------------
+x               int      0        1             
+=== SUMMARY ===
+Syntax errors: 0
+Semantic errors: 1
+=== TAC ===
+(Intermediate code generation skipped due to earlier errors.)

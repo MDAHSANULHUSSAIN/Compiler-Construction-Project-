@@ -1,0 +1,14 @@
+TOKEN|int|Keyword|1
+TOKEN|x|Identifier|1
+TOKEN|;|Special Character|1
+TOKEN|x|Identifier|2
+TOKEN|=|Operator|2
+TOKEN|5|Integer Literal|2
+TOKEN|;|Special Character|2
+TOKEN|y|Identifier|3
+TOKEN|=|Operator|3
+TOKEN|10|Integer Literal|3
+TOKEN|;|Special Character|3
+TOKEN|print|Keyword|4
+TOKEN|y|Identifier|4
+TOKEN|;|Special Character|4

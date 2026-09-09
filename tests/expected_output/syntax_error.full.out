@@ -1,0 +1,15 @@
+Syntax Error at line 2: syntax error (near token '5')
+=== AST ===
+Program
+  VarDecl <int> x (line 1)
+  Print (line 3)
+    Ident x (line 3)
+=== SYMBOL TABLE ===
+Name            Type     Scope    Line Declared 
+--------------------------------------------------
+x               int      0        1             
+=== SUMMARY ===
+Syntax errors: 1
+Semantic errors: 0
+=== TAC ===
+(Intermediate code generation skipped due to earlier errors.)
